@@ -1,3 +1,5 @@
+package ro.fastrackit.classroom;
+
 import java.time.LocalDateTime;
 public class Student {
     private String fname;

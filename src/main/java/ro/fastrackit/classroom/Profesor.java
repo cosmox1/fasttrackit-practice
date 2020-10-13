@@ -1,3 +1,5 @@
+package ro.fastrackit.classroom;
+
 public class Profesor {
     private String Fname;
     private String Lname;

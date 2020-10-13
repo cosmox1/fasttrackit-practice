@@ -1,3 +1,5 @@
+package ro.fastrackit.classroom;
+
 public class FastTrackIT {
     public static void main(String[] args) {
 //atribuim valori obiectului student A ce trece prin constructorul de aceeasi forma

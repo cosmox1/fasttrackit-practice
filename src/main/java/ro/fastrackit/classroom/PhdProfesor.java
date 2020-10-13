@@ -1,3 +1,5 @@
+package ro.fastrackit.classroom;
+
 public class PhdProfesor extends Profesor{
     private Integer age;
     private String Fname;
