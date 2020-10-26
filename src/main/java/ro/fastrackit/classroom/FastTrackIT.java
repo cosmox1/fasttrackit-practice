@@ -9,15 +9,13 @@ public class FastTrackIT {
      // setam noi numele prin setter
         studentA.setFname("Mihnea");
         studentA.setLname("Fasttrack");
-        studentA.setage(30);
+        studentA.setAge(30);
         //printam informatia inserata prin setters
         System.out.println(studentA);
 
         Profesor profesorB= new Profesor("Mihnea","Fasttrack",24,true);
         //printam constructorul din profesor
-        System.out.println(profesorB);
-PhdProfesor C=new PhdProfesor("Florin","Track",24, null);
-System.out.println(C);
+
 
     }
 }

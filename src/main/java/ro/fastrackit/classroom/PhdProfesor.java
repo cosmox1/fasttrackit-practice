@@ -1,9 +1,6 @@
 package ro.fastrackit.classroom;
 
-public class PhdProfesor extends Profesor{
+public class PhdProfesor  {
 
-    PhdProfesor (String Fname,String Lname, Integer age, Boolean phd){
-        super( Fname,Lname, age, phd);
-    }
 
 }
