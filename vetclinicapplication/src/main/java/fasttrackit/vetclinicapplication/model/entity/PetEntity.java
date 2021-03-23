@@ -1,25 +1,34 @@
 package fasttrackit.vetclinicapplication.model.entity;
 
-import fasttrackit.vetclinicapplication.model.PetEnums;
+import fasttrackit.vetclinicapplication.aditionals.PetEnums;
+import org.w3c.dom.stylesheets.LinkStyle;
 
 import javax.persistence.*;
+import java.util.List;
 
-@Entity(name="Pet")
+@Entity(name="pet")
 public class PetEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     @Column
     private String name;
-    @Column(name="Pet_species")
+    @Column(name="pet_species")
     @Enumerated(EnumType.STRING)
     private PetEnums pets;
 
-    public long getId() {
+@OneToMany(cascade = CascadeType.ALL,mappedBy = "pet")
+   private List<ConsultationEntity> consultations;
+
+    public List<ConsultationEntity> getConsultationEntity() {
+        return consultations;
+    }
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -37,7 +46,14 @@ public class PetEntity {
 
     public void setPets(PetEnums pets) {
         this.pets = pets;
+    }
 
+    public List<ConsultationEntity> getConsultations() {
+        return consultations;
+    }
+
+    public void setConsultations(List<ConsultationEntity> consultations) {
+        this.consultations = consultations;
     }
 
     @Override
@@ -46,6 +62,7 @@ public class PetEntity {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", pets=" + pets +
+                ", consultations=" + consultations +
                 '}';
     }
 }

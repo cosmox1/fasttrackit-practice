@@ -1,6 +1,6 @@
 package tema2_curs3si4;
 
-public class principala {
+public class Principala {
     public static void main(String[] args) {
 
     }

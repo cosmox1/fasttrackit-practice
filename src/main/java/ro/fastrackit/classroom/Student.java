@@ -23,16 +23,18 @@ public class Student implements Human {
     }
 
     //getters
-  @Override
+    @Override
     public String getFname() {
         return this.fname;
     }
-@Override
+
+    @Override
     public String getLname() {
         return this.lname;
 
     }
-@Override
+
+    @Override
     public Integer getAge() {
         return this.age;
 
@@ -43,21 +45,25 @@ public class Student implements Human {
     public void setFname(String fname) {
         this.fname = fname;
     }
-@Override
+
+    @Override
     public void setLname(String lname) {
         this.lname = lname;
     }
-@Override
+
+    @Override
     public void setAge(Integer age) {
         this.age = age;
     }
+
     @Override
-    public String getEmail(){
+    public String getEmail() {
         return email;
     }
+
     @Override
-    public void setEmail(String givenEmail){
-        this.email=givenEmail;
+    public void setEmail(String givenEmail) {
+        this.email = givenEmail;
     }
 
     @Override

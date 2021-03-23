@@ -1,8 +1,8 @@
 package fasttrackit.vetclinicapplication.service;
 
 
-import fasttrackit.vetclinicapplication.model.Pet;
-import fasttrackit.vetclinicapplication.model.PetEnums;
+import fasttrackit.vetclinicapplication.model.dto.Pet;
+import fasttrackit.vetclinicapplication.aditionals.PetEnums;
 import fasttrackit.vetclinicapplication.model.entity.PetEntity;
 import fasttrackit.vetclinicapplication.repos.PetRepos;
 import org.junit.jupiter.api.Assertions;
@@ -29,7 +29,9 @@ public class PetServiceTest {
     Mockito.when(this.repos.save(ArgumentMatchers.any(PetEntity.class))).thenReturn(new PetEntity());
     this.service.createNewPet(petRequest);//when the service method calls the createPet method
     Mockito.verify(repos).save(ArgumentMatchers.any(PetEntity.class));//then the repos saved method is called
-}
+};
+
+
 @Test
     public void testExpected_expectedActualsValuesFromRepository(){
     //test setup

@@ -2,7 +2,7 @@ package tema2_curs3si4;
 
 import java.util.Scanner;
 
-public class numberofdays {
+public class Numberofdays {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int numarulDeZileInoLuna = 0;

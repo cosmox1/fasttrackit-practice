@@ -38,6 +38,7 @@ public class CitireXLXSFile {
                         case'8':
                             customerPurches.setCategory(currentCell.getStringCellValue());
                             break;
+
                     }
                 }
                 customerPurchesList.add(customerPurches);

@@ -2,7 +2,7 @@ package tema2_curs3si4;
 
 import java.util.Scanner;
 
-public class palindrom {
+public class Palindrom {
     public static void main(String[] args) {
         Scanner numar=new Scanner(System.in);
         System.out.println("introdu numarul");

@@ -2,7 +2,7 @@ package tema2_curs3si4;
 
 import java.util.Scanner;
 
-public class toatenrprime {
+public class Toatenrprime {
     public static void main(String[] args) {
         Scanner introdu = new Scanner(System.in);
         System.out.println("introdu numarul");
